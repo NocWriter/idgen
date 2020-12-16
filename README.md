@@ -1,4 +1,4 @@
-# Identifiers generator (idgen)
+# Identifiers generator (IdGen)
 
 Efficient library for safely generating unique identifiers.
 
@@ -7,9 +7,9 @@ Efficient library for safely generating unique identifiers.
 The library provides an abstraction represented as an interface: `IdGenerator`:
 
 ```java
-IdGenerator generator=...
+IdGenerator generator = ...
 
-String uniqueId=generator.generate()
+String uniqueId = generator.generate()
 
 ```
 
@@ -26,7 +26,7 @@ Requires Java 1.8 and above.
 ## The Secure-random generator
 
 Perhaps the most appealing (and the centric part of this library) is the `SecureRandomIdGenerator` generator. It is
-considered as the most reliable way to generate unique identifiers (numbers of otherwise) and any given length and any
+considered as the most reliable way to generate unique identifiers (numbers of otherwise) at any given length and with any
 given alphabet.
 
 By default, it is configured to generate tokens of 24 characters long with an alphabet containing all digits and all
@@ -42,7 +42,7 @@ This implementation is efficient in both execution time and in resources.
 
 ## Frequently asked questions
 
-Please refer to our [faq.md|FAQ] section for more information on why you should use this library.
+Please refer to our [FAQ](./faq.md) section for more information on why you should use this library.
 
 ## License
 
