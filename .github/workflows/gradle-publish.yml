@@ -17,10 +17,10 @@ jobs:
           java-version: 8
           server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
           settings-path: ${{ github.workspace }} # location for the settings.xml file
-
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
       - name: Build and test project
         run: gradle build
-
       - name: Publish artifact to GitHub Packages
         env:
           GITHUB_ACTOR: ${{ github.actor }}
